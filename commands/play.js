@@ -11,7 +11,7 @@ exports.run = async (bot, message, ges, ops, msg) => {
 
     let info = await ytdl.getInfo(ges[0]);
     let connection = await message.member.voiceChannel.join();
-    let dispatcher = await connection.play(ytdl(ges[0], {
+    let dispatcher = await connection.playStream(ytdl(ges[0], {
         filter: 'audioonly'
     }));
 
