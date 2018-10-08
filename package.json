@@ -13,7 +13,7 @@
     "tempy": "0.2.1",
     "mathjs": "5.2.0",
     "ytdl-core": "0.26.1",
-    "node-opus": "0.3.0"
+    "node-opus": "0.3.0",
     "iterate-js": "^1.0.29",
     "jsonfile": "^2.4.0",
     "moment": "^2.19.4",
