@@ -1,0 +1,17 @@
+{
+  "name": "Ren0l",
+  "description": "Rinoloriy Bot for Discord",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "discord.js": "11.4.2",
+    "request": "2.88.0",
+    "qrcode": "1.3.0",
+    "tempy": "0.2.1",
+    "mathjs": "5.2.0",
+    "ytdl-core": "0.26.1"
+  }
+}
