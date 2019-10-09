@@ -9,7 +9,7 @@ if(!reason) reason = "Нету причины!";
 
 kickMember.kick();
 
-message.channel.bulkDelete(args[2]).then(() => {
+message.channel.bulkDelete(args[0]).then(() => {
 message.channel.send(`Произошёл кик... Помянем.`).then(msg => msg.delete(2000));
 }
 
