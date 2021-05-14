@@ -1,6 +1,7 @@
-const Discord = require("discord.js");
-
-module.exports.run = async (client, message, args) => {
+module.exports = {
+  name: 'stt',
+  description:"отправляет говно",
+execute(client, message, args) {
 
   if (!message.member.roles.find("name", "@everyone")) {
   		message.channel.send('Недостаточно прав');
@@ -24,6 +25,4 @@ module.exports.run = async (client, message, args) => {
           });
     }
 
-module.exports.help = {
-  name: "createpool"
 }

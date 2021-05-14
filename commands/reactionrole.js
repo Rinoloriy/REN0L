@@ -1,5 +1,8 @@
-const Discord = require("discord.js");
-module.exports.run = async (client, message, args) => {
+module.exports = {
+  name: 'reactionrole',
+  description:"Устанавливает роль по реакции",
+
+  execute(message, args, Discord, client) {
   const channel = '842409612665159692';
   const dota = message.guild.roles.cache.find(role => role.name === "dota 2");
   const csgo = message.guild.roles.cache.find(role => role.name === "csgo");
@@ -21,6 +24,7 @@ module.exports.run = async (client, message, args) => {
   const pubgimg = '842771650880864256';
   const lolimg = '842771650880864256';
 
+
   let embed = new discord.MessageEmbed()
     .setColor('#e62cd3')
     .setTitle('Выбор роли')
@@ -36,44 +40,42 @@ module.exports.run = async (client, message, args) => {
     MessageEmbed.react(pubgimg);
     MessageEmbed.react(lolimg);
 
-    bot.on('messageReactionAdd'), async(reaction, user) => {
+    client.on('messageReactionAdd', async (reaction, user) => {
       if(reaction.message.partial) await reaction.message.fetch();
       if(reaction.partial) await reaction.fetch();
       if(user.bot) return;
       if(!reaction.message.guild) return;
       if(reaction.message.channel.id === channel) {
         if (reaction.emoji.name === dotaimg) {
-          await reaction.message.guild.members.cache.get(user.id).roles.add(dota)
+          await reaction.message.guild.members.cache.get(user.id).roles.add(dota);
         }
         if (reaction.emoji.name === csgoimg) {
-          await reaction.message.guild.members.cache.get(user.id).roles.add(csgo)
+          await reaction.message.guild.members.cache.get(user.id).roles.add(csgo);
         }
         if (reaction.emoji.name === r6simg) {
-          await reaction.message.guild.members.cache.get(user.id).roles.add(r6s)
+          await reaction.message.guild.members.cache.get(user.id).roles.add(r6s);
         }
         if (reaction.emoji.name === valorantimg) {
-          await reaction.message.guild.members.cache.get(user.id).roles.add(valorant)
+          await reaction.message.guild.members.cache.get(user.id).roles.add(valorant);
         }
         if (reaction.emoji.name === brawlstarsim) {
-          await reaction.message.guild.members.cache.get(user.id).roles.add(brawlstars)
+          await reaction.message.guild.members.cache.get(user.id).roles.add(brawlstars);
         }
         if (reaction.emoji.name === hoiimg) {
-          await reaction.message.guild.members.cache.get(user.id).roles.add(hoi)
+          await reaction.message.guild.members.cache.get(user.id).roles.add(hoi);
         }
         if (reaction.emoji.name === stellarisimg) {
-          await reaction.message.guild.members.cache.get(user.id).roles.add(stellaris)
+          await reaction.message.guild.members.cache.get(user.id).roles.add(stellaris);
         }
         if (reaction.emoji.name === pubgimg) {
-          await reaction.message.guild.members.cache.get(user.id).roles.add(pubg)
+          await reaction.message.guild.members.cache.get(user.id).roles.add(pubg);
         }
         if (reaction.emoji.name === lolimg) {
-          await reaction.message.guild.members.cache.get(user.id).roles.add(lol)
+          await reaction.message.guild.members.cache.get(user.id).roles.add(lol);
         }
       } else {
         return;
       }
-    }
-}
-module.exports.help = {
-  name:"reactionrole"
+    });
+  }
 }

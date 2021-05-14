@@ -1,6 +1,8 @@
-const Discord = require("discord.js");
+module.exports = {
+  name: 'serverinfo',
+  description:"отправляет говно",
 
-module.exports.run = async (client, message, args) => {
+execute(client, message, args) {
     let sicon = message.guild.iconURL;
     let serverembed1 = new Discord.RichEmbed()
     .setDescription("`Информация по серверу`")
@@ -11,6 +13,4 @@ module.exports.run = async (client, message, args) => {
     message.channel.send(serverembed1);
 }
 
-module.exports.help = {
-  name:"serverinfo"
 }
