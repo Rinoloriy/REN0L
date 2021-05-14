@@ -15,8 +15,8 @@ module.exports = {
             .setDescription('Нажми на эмоцию и получи роль!');
 
         let messageEmbed = await message.channel.send(embed);
-        messageEmbed.react(yellowTeamEmoji);
-        messageEmbed.react(blueTeamEmoji);
+        messageEmbed.react(dota2em);
+        messageEmbed.react(csgoem);
 
         client.on('messageReactionAdd', async (reaction, user) => {
             if (reaction.message.partial) await reaction.message.fetch();
