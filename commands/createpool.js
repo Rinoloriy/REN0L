@@ -1,7 +1,7 @@
 module.exports = {
   name: 'stt',
-  description:"отправляет говно",
-execute(client, message, args) {
+  description:"отправляет сообщения",
+execute async(client, message, args) {
 
   if (!message.member.roles.find("name", "@everyone")) {
   		message.channel.send('Недостаточно прав');
