@@ -23,7 +23,7 @@ client.on('message', message => {
   const args = message.content.slice(prefix.length).split(/ +/);
   const command = args.shift().toLowerCase();
 	if (command === 'reactionrole') {
-		client.commands.get('reactionrole').execute(Discord, client, args, message, roles);
+		client.commands.get('reactionrole').execute(Discord, client, args, message);
 	}
 });
 
