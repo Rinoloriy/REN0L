@@ -21,7 +21,7 @@ module.exports.run = async (bot, message, args) => {
   const pubgimg = ':pubg:';
   const lolimg = ':lol:';
 
-  let embed = new discord.MessageEmbed()
+  let embed = new Discord.MessageEmbed()
     .setColor('#e62cd3')
     .setTitle('Выбор роли')
     .setDescription('Выберите игру для который вы хотите открыть каналы!');
