@@ -3,26 +3,26 @@ module.exports = {
   description:"Устанавливает роль по реакции",
 
   async execute(message, args, Discord, client) {
-  const channel = '842409612665159692';
- const dota = message.guild.roles.cache.find(role => role.name === '842484973386727485');
-  const csgo = message.guild.roles.cache.find(role => role.name === '842752300941836369');
-  const r6s = message.guild.roles.cache.find(role => role.name === '842484991580831824');
-  const valorant = message.guild.roles.cache.find(role => role.name === '842490577504305202');
-  const brawlstars = message.guild.roles.cache.find(role => role.name === '842490502149701683');
-  const hoi = message.guild.roles.cache.find(role => role.name === '842752353676951612');
-  const stellaris = message.guild.roles.cache.find(role => role.name === '842752403253362739');
-  const pubg = message.guild.roles.cache.find(role => role.name === '842490498127495189');
-  const lol = message.guild.roles.cache.find(role => role.name === '842769992935538699');
-    
-  const dotaimg = '842771650880864256';
-  const csgoimg = '842771650880864256';
-  const r6simg = '842771650880864256';
-  const valorantimg = '842771650880864256';
-  const brawlstarsimg = '842771650880864256';
-  const hoiimg = '842771650880864256';
-  const stellarisimg = '842771650880864256';
-  const pubgimg = '842771650880864256';
-  const lolimg = '842771650880864256';
+  var channel = '842409612665159692';
+  var dota = message.guild.roles.cache.find(role => role.name === "dota2");
+  var csgo = message.guild.roles.cache.find(role => role.name === "csgo");
+  var r6s = message.guild.roles.cache.find(role => role.name === "r6s");
+  var valorant = message.guild.roles.cache.find(role => role.name === "valorant");
+  var brawlstars = message.guild.roles.cache.find(role => role.name === "brawlstars");
+  var hoi = message.guild.roles.cache.find(role => role.name === "hoi");
+  var stellaris = message.guild.roles.cache.find(role => role.name === "stellaris");
+  var pubg = message.guild.roles.cache.find(role => role.name === "pubg");
+  var lol = message.guild.roles.cache.find(role => role.name === "lol");
+
+  var dotaimg = '842771650880864256';
+  var csgoimg = '842771650880864256';
+  var r6simg = '842771650880864256';
+  var valorantimg = '842771650880864256';
+  var brawlstarsimg = '842771650880864256';
+  var hoiimg = '842771650880864256';
+  var stellarisimg = '842771650880864256';
+  var pubgimg = '842771650880864256';
+  var lolimg = '842771650880864256';
 
 
   let embed = new discord.MessageEmbed()
