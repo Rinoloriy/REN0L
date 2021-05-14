@@ -24,10 +24,7 @@ client.on('message', message => {
   const command = args.shift().toLowerCase();
 	if (command === 'reactionrole') {
 		client.commands.get('reactionrole').execute(Discord, client, args, message);
-	} else if {
-	 return
 	}
-
 });
 
 client.login(process.env.token);
