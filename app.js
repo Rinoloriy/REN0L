@@ -28,8 +28,8 @@ client.on('message', message => {
 		client.commands.get('createpool').execute(client, message, args);
 	} else if (command === 'stt') {
 		client.commands.get('stt').execute(client, message, args);
-	} else if (command === 'reactionrole') {
-		client.commands.get('reactionrole').execute(client, message, args);
+	} else if (command === 'serverinfo') {
+		client.commands.get('serverinfo').execute(client, message, args);
 	}
 
 });
