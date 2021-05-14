@@ -24,8 +24,8 @@ client.on('message', message => {
   const command = args.shift().toLowerCase();
 	if (command === 'reactionrole') {
 		client.commands.get('reactionrole').execute(message, args);
-	} else if (command === 'clear' {
-		client.commands.get('clear').execute(message, args);
+	} else if (command === 'cl' {
+		client.commands.get('cl').execute(message, args);
 	} else if (command === 'stt' {
 		client.commands.get('stt').execute(message, args);
 	} else if (command === 'serverinfo' {
