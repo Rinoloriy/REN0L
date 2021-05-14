@@ -6,8 +6,8 @@ module.exports = {
         const dota2role = message.guild.roles.cache.find(role => role.name === "dota2");
         const csgorole = message.guild.roles.cache.find(role => role.name === "csgo");
 
-        const dota2em = 842771650880864256;
-        const csgoem = 842771650880864256;
+        const dota2em = client.emojis.get("842830675974815744");
+        const csgoem = client.emojis.get("842830675974815744");
 
         let embed = new Discord.MessageEmbed()
             .setColor('#e42643')
@@ -15,8 +15,8 @@ module.exports = {
             .setDescription('Нажми на эмоцию и получи роль!');
 
         let messageEmbed = await message.channel.send(embed);
-        messageEmbed.react(dota2em);
-        messageEmbed.react(csgoem);
+        messageEmbed.react(yellowTeamEmoji);
+        messageEmbed.react(blueTeamEmoji);
 
         client.on('messageReactionAdd', async (reaction, user) => {
             if (reaction.message.partial) await reaction.message.fetch();
@@ -50,7 +50,7 @@ module.exports = {
                     await reaction.message.guild.members.cache.get(user.id).roles.remove(dota2role);
                 }
                 if (reaction.emoji.name === csgoem) {
-                    await reaction.message.guild.members.cache.get(user.id).roles.remove(dota2role);
+                    await reaction.message.guild.members.cache.get(user.id).roles.remove(csgorole);
                 }
             } else {
                 return;
