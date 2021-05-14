@@ -1,8 +1,0 @@
-const Discord = require("discord.js");
-module.exports.run = async (bot, message, args) => {
-message.channel.send(`Влад красавчик, одобряю!!!`).then(msg => msg.delete(2000));
-}
-
-module.exports.help = {
-  name: "vladkrasava"
-}
