@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-module.exports.run = async (bot, message, args) => {
+module.exports.run = async (bot, message, args, bot) => {
   const channel = '842409612665159692';
   const dota = message.guild.roles.cache.find(role => role.name === "dota 2");
   const csgo = message.guild.roles.cache.find(role => role.name === "csgo");
@@ -36,7 +36,7 @@ module.exports.run = async (bot, message, args) => {
     MessageEmbed.react(pubgimg);
     MessageEmbed.react(lolimg);
 
-    client.on('messageReactionAdd'), async(reaction, user) => {
+    bot.on('messageReactionAdd'), async(reaction, user) => {
       if(reaction.message.partial) await reaction.message.fetch();
       if(reaction.partial) await reaction.fetch();
       if(user.bot) return;
