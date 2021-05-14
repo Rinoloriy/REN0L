@@ -24,11 +24,11 @@ client.on('message', message => {
   const command = args.shift().toLowerCase();
 	if (command === 'reactionrole') {
 		client.commands.get('reactionrole').execute(message, args);
-	} else if (command === 'cl' {
+	} else if (command === 'cl') {
 		client.commands.get('cl').execute(message, args);
-	} else if (command === 'stt' {
+	} else if (command === 'stt') {
 		client.commands.get('stt').execute(message, args);
-	} else if (command === 'serverinfo' {
+	} else if (command === 'serverinfo') {
 		client.commands.get('serverinfo').execute(client);
 	}
 
