@@ -6,8 +6,8 @@ module.exports = {
         const dota2role = message.guild.roles.cache.find(role => role.name === "dota2");
         const csgorole = message.guild.roles.cache.find(role => role.name === "csgo");
 
-        const dota2em = 'dota';
-        const csgoem = 'csgo';
+        const dota2em = '842481768871100476';
+        const csgoem = '842759269690245140';
 
         let embed = new Discord.MessageEmbed()
             .setColor('#e42643')
@@ -15,8 +15,8 @@ module.exports = {
             .setDescription('Нажми на эмоцию и получи роль!');
 
         let messageEmbed = await message.channel.send(embed);
-        messageEmbed.react(dota2em);
-        messageEmbed.react(csgoem);
+        messageEmbed.react(yellowTeamEmoji);
+        messageEmbed.react(blueTeamEmoji);
 
         client.on('messageReactionAdd', async (reaction, user) => {
             if (reaction.message.partial) await reaction.message.fetch();
