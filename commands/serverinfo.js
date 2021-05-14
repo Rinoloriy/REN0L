@@ -1,9 +1,11 @@
 module.exports = async (client) =>{
-    const guild = client.guilds.cache.get('716316807912226837');
+  name: 'serverinfo',
+  description:"serverinfo",
+    const guild = client.guilds.cache.get('842380313945833492');
     setInterval(() =>{
         const memberCount = guild.memberCount;
-        const channel = guild.channels.cache.get('786822441103392798');
-        channel.setName(`Total Members: ${memberCount.toLocaleString()}`);
-        console.log('Updating Member Count');
+        const channel = guild.channels.cache.get('842489210028294185');
+        channel.setName(`Всего участников: ${memberCount.toLocaleString()}`);
+        console.log('Обновляю количество участников');
     }, 5000);
 }
