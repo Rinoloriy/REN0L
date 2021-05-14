@@ -27,10 +27,10 @@ module.exports = {
 
             if (reaction.message.channel.id == channel) {
                 if (reaction.emoji.name === dota2em) {
-                    await reaction.message.guild.members.cache.get(user.id).roles.add(dota2role);
+                    await reaction.message.guild.members.cache.get(user.id).roles.add(dota2);
                 }
                 if (reaction.emoji.name === csgoem) {
-                    await reaction.message.guild.members.cache.get(user.id).roles.add(csgorole);
+                    await reaction.message.guild.members.cache.get(user.id).roles.add(csgo);
                 }
             } else {
                 return;
@@ -48,10 +48,10 @@ module.exports = {
 
             if (reaction.message.channel.id == channel) {
                 if (reaction.emoji.name === dota2em) {
-                    await reaction.message.guild.members.cache.get(user.id).roles.remove(dota2role);
+                    await reaction.message.guild.members.cache.get(user.id).roles.remove(dota2);
                 }
                 if (reaction.emoji.name === csgoem) {
-                    await reaction.message.guild.members.cache.get(user.id).roles.remove(csgorole);
+                    await reaction.message.guild.members.cache.get(user.id).roles.remove(csgo);
                 }
             } else {
                 return;
