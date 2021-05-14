@@ -20,12 +20,14 @@ client.on('ready', () => {
 });
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
-  const args = message.content.slice(prefix.length).split(/ +/);
+  const args = message.content.slice(prefix.length).split(/ +/));
   const command = args.shift().toLowerCase();
 	if (command === 'reactionrole') {
-		client.commands.get('reactionrole').execute(Discord, client, args, message);
-	} else if (command === 'stt') {
-		client.commands.get('stt').execute(args, message);
+		client.commands.get('reactionrole').execute(message, args);
+	} else if (command === 'clear' {
+		client.commands.get('clear').execute(message, args);
+	} else if (command === 'stt' {
+		client.commands.get('stt').execute(message, args);
 	}
 
 });
