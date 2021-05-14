@@ -4,16 +4,16 @@ module.exports = {
 
   async execute(message, args, Discord, client) {
   const channel = '842409612665159692';
-  const dota = message.guild.roles.cache.find(role => role.name === "dota2");
-  const csgo = message.guild.roles.cache.find(role => role.name === "csgo");
-  const r6s = message.guild.roles.cache.find(role => role.name === "r6s");
-  const valorant = message.guild.roles.cache.find(role => role.name === "valorant");
-  const brawlstars = message.guild.roles.cache.find(role => role.name === "brawlstars");
-  const hoi = message.guild.roles.cache.find(role => role.name === "hoi");
-  const stellaris = message.guild.roles.cache.find(role => role.name === "stellaris");
-  const pubg = message.guild.roles.cache.find(role => role.name === "pubg");
-  const lol = message.guild.roles.cache.find(role => role.name === "lol");
-
+ const dota = message.guild.roles.cache.find(role => role.name === '842484973386727485');
+  const csgo = message.guild.roles.cache.find(role => role.name === '842752300941836369');
+  const r6s = message.guild.roles.cache.find(role => role.name === '842484991580831824');
+  const valorant = message.guild.roles.cache.find(role => role.name === '842490577504305202');
+  const brawlstars = message.guild.roles.cache.find(role => role.name === '842490502149701683');
+  const hoi = message.guild.roles.cache.find(role => role.name === '842752353676951612');
+  const stellaris = message.guild.roles.cache.find(role => role.name === '842752403253362739');
+  const pubg = message.guild.roles.cache.find(role => role.name === '842490498127495189');
+  const lol = message.guild.roles.cache.find(role => role.name === '842769992935538699');
+    
   const dotaimg = '842771650880864256';
   const csgoimg = '842771650880864256';
   const r6simg = '842771650880864256';
