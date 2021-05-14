@@ -27,14 +27,14 @@ module.exports.run = async (bot, message, args) => {
     .setDescription('Выберите игру для который вы хотите открыть каналы!');
 
     let MessageEmbed = await message.channel.send(embed);
-    messageEmbed.react(dotaimg);
-    messageEmbed.react(csgoimg);
-    messageEmbed.react(r6simg);
-    messageEmbed.react(valorantimg);
-    messageEmbed.react(brawlstarsimg);
-    messageEmbed.react(stellarisimg);
-    messageEmbed.react(pubgimg);
-    messageEmbed.react(lolimg);
+    MessageEmbed.react(dotaimg);
+    MessageEmbed.react(csgoimg);
+    MessageEmbed.react(r6simg);
+    MessageEmbed.react(valorantimg);
+    MessageEmbed.react(brawlstarsimg);
+    MessageEmbed.react(stellarisimg);
+    MessageEmbed.react(pubgimg);
+    MessageEmbed.react(lolimg);
 
     client.on('messageReactionAdd'), async(reaction, user) => {
       if(reaction.message.partial) await reaction.message.fetch();
