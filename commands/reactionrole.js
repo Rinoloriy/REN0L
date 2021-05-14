@@ -4,7 +4,7 @@ module.exports = {
 
   async execute(message, args, Discord, client) {
   const channel = '842409612665159692';
-  const dota = message.guild.roles.cache.find(role => role.name === "dota 2");
+  const dota = message.guild.roles.cache.find(role => role.name === "dota2");
   const csgo = message.guild.roles.cache.find(role => role.name === "csgo");
   const r6s = message.guild.roles.cache.find(role => role.name === "r6s");
   const valorant = message.guild.roles.cache.find(role => role.name === "valorant");
