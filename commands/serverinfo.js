@@ -2,7 +2,7 @@ module.exports = {
   name: 'serverinfo',
   description:"отправляет говно",
 
-execute(client, message, args) {
+execute async(client, message, args) {
     let sicon = message.guild.iconURL;
     let serverembed1 = new Discord.RichEmbed()
     .setDescription("`Информация по серверу`")
