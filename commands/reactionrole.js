@@ -11,15 +11,15 @@ module.exports.run = async (bot, message, args) => {
   const pubg = message.guild.roles.cache.find(role => role.name === "pubg");
   const lol = message.guild.roles.cache.find(role => role.name === "lol");
 
-  const dotaimg = ':dota:';
-  const csgoimg = ':csgo:';
-  const r6simg = ':r6s:';
-  const valorantimg = ':valorant:';
-  const brawlstarsimg = ':brawlstars:';
-  const hoiimg = ':hoi:';
-  const stellarisimg = ':stellaris:';
-  const pubgimg = ':pubg:';
-  const lolimg = ':lol:';
+  const dotaimg = '842771650880864256';
+  const csgoimg = '842771650880864256';
+  const r6simg = '842771650880864256';
+  const valorantimg = '842771650880864256';
+  const brawlstarsimg = '842771650880864256';
+  const hoiimg = '842771650880864256';
+  const stellarisimg = '842771650880864256';
+  const pubgimg = '842771650880864256';
+  const lolimg = '842771650880864256';
 
   let embed = new Discord.MessageEmbed()
     .setColor('#e62cd3')
