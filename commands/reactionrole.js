@@ -3,11 +3,11 @@ module.exports = {
     description: "Роль за реакцию",
     async execute(message, args, Discord, client) {
         const channel = '842409612665159692';
-        const yellowTeamRole = message.guild.roles.cache.find(role => role.name === "YOUR_ROLE");
-        const blueTeamRole = message.guild.roles.cache.find(role => role.name === "YOUR_ROLE");
+        const dota2role = message.guild.roles.cache.find(role => role.name === "dota2");
+        const csgorole = message.guild.roles.cache.find(role => role.name === "csgo");
 
-        const yellowTeamEmoji = 'YOUR_EMOJI';
-        const blueTeamEmoji = 'YOUR_EMOJI';
+        const dota2em = '842771650880864256';
+        const csgoem = '842771650880864256';
 
         let embed = new Discord.MessageEmbed()
             .setColor('#e42643')
@@ -25,11 +25,11 @@ module.exports = {
             if (!reaction.message.guild) return;
 
             if (reaction.message.channel.id == channel) {
-                if (reaction.emoji.name === yellowTeamEmoji) {
-                    await reaction.message.guild.members.cache.get(user.id).roles.add(yellowTeamRole);
+                if (reaction.emoji.name === dota2em) {
+                    await reaction.message.guild.members.cache.get(user.id).roles.add(dota2role);
                 }
-                if (reaction.emoji.name === blueTeamEmoji) {
-                    await reaction.message.guild.members.cache.get(user.id).roles.add(blueTeamRole);
+                if (reaction.emoji.name === csgoem) {
+                    await reaction.message.guild.members.cache.get(user.id).roles.add(csgorole);
                 }
             } else {
                 return;
