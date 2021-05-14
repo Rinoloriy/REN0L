@@ -6,8 +6,8 @@ module.exports = {
         const dota2role = message.guild.roles.cache.find(role => role.name === "dota2");
         const csgorole = message.guild.roles.cache.find(role => role.name === "csgo");
 
-        const dota2em = '842771650880864256';
-        const csgoem = '842771650880864256';
+        const dota2em = ':dota:';
+        const csgoem = ':csgo:';
 
         let embed = new Discord.MessageEmbed()
             .setColor('#e42643')
