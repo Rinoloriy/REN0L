@@ -8,6 +8,5 @@
   },
   "dependencies": {
     "discord.js": "12.5.3",
-    "jsonfile": "6.1.0"
   }
 }
