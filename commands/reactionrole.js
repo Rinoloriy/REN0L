@@ -46,11 +46,11 @@ module.exports = {
 
 
             if (reaction.message.channel.id == channel) {
-                if (reaction.emoji.name === yellowTeamEmoji) {
-                    await reaction.message.guild.members.cache.get(user.id).roles.remove(yellowTeamRole);
+                if (reaction.emoji.name === dota2em) {
+                    await reaction.message.guild.members.cache.get(user.id).roles.remove(dota2role);
                 }
-                if (reaction.emoji.name === blueTeamEmoji) {
-                    await reaction.message.guild.members.cache.get(user.id).roles.remove(blueTeamRole);
+                if (reaction.emoji.name === csgoem) {
+                    await reaction.message.guild.members.cache.get(user.id).roles.remove(dota2role);
                 }
             } else {
                 return;
