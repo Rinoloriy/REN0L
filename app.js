@@ -24,12 +24,8 @@ client.on('message', message => {
   const command = args.shift().toLowerCase();
 	if (command === 'reactionrole') {
 		client.commands.get('reactionrole').execute(Discord, client, args, message);
-	} else if (command === 'createpool') {
-		client.commands.get('createpool').execute(client, message, args);
-	} else if (command === 'stt') {
-		client.commands.get('stt').execute(client, message, args);
-	} else if (command === 'reactionrole') {
-		client.commands.get('reactionrole').execute(client, message, args);
+	} else if {
+	 return
 	}
 
 });
