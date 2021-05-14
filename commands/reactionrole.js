@@ -2,7 +2,7 @@ module.exports = {
   name: 'reactionrole',
   description:"Устанавливает роль по реакции",
 
-  async execute(message, args, Discord, client, roles) {
+  async execute(message, args, Discord, client) {
   const channel = '842409612665159692';
   const dota = message.guild.roles.cache.find(role => role.name === "dota2");
   const csgo = message.guild.roles.cache.find(role => role.name === "csgo");
