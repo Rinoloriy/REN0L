@@ -27,8 +27,8 @@ client.on('message', message => {
 
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
-    if (command === 'reactionrole') {
-        client.commands.get('reactionrole').execute(message, args, Discord, client);
+    if (command === 'roleclaim') {
+        client.commands.get('roleclaim').execute(client);
     }
 
 });
